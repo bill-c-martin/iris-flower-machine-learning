@@ -1,9 +1,11 @@
 # iris-flower-machine-learning
 
-Statistical classification of Iris flowers using machine learning with Python
+Statistical classification of Iris flowers using machine learning with Python and Jupyter Notebook.
 
-[source](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
-[potential other source](https://medium.com/gft-engineering/start-to-learn-machine-learning-with-the-iris-flower-classification-challenge-4859a920e5e3)
+> Note: Work in progress.
+
+- [source](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
+- [potential other source](https://medium.com/gft-engineering/start-to-learn-machine-learning-with-the-iris-flower-classification-challenge-4859a920e5e3)
 
 ## Localhost Setup
 
