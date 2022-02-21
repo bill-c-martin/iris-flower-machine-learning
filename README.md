@@ -1,9 +1,9 @@
 # iris-flower-machine-learning
+
 Statistical classification of Iris flowers using machine learning with Python
 
-https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
-https://medium.com/gft-engineering/start-to-learn-machine-learning-with-the-iris-flower-classification-challenge-4859a920e5e3
-
+[source](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
+[potential other source](https://medium.com/gft-engineering/start-to-learn-machine-learning-with-the-iris-flower-classification-challenge-4859a920e5e3)
 
 ## Localhost Setup
 
@@ -69,3 +69,14 @@ matplotlib: 3.5.1
 pandas: 1.4.1
 sklearn: 1.0.2
 ```
+
+### Run in VS Code
+
+1. Install VS Code
+2. Install the [Microsoft Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+3. Open this repo in VS Code
+4. Double click `index.ipynb`
+5. Click "Run"
+
+This will run `index.py` in a Jupyter Notebook, so that generated plots and graphs can be seen.
+
