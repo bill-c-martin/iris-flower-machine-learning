@@ -1,3 +1,5 @@
+# Note: Run this through index.ipynb Jupyter Notebook to see generated graphs
+
 # Load libraries
 from pandas import read_csv
 from pandas.plotting import scatter_matrix
@@ -32,3 +34,16 @@ print(dataset.describe(), end='\n\n')
 
 print('Dataset class distribution:')
 print(dataset.groupby('class').size(), end='\n\n')
+
+# Box and whisker plots
+print('Box and whisker plots for the dataset:')
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+pyplot.show()
+
+print("Histograms of dataset, with sepal length and width showing Gaussian distributions:")
+dataset.hist()
+pyplot.show()
+
+print("Scatterplots of attrbutes, with diagonal groupings indicating high correlations and predictable relationships:")
+scatter_matrix(dataset)
+pyplot.show()
