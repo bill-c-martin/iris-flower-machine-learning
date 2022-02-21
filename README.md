@@ -16,13 +16,10 @@ In Ubuntu:
 sudo apt update
 sudo apt -y upgrade
 
-# Install python, pip, and others
+# Install python, pip, virtual env, and others
 python3 -V
-sudo apt install -y python3-pip
+sudo apt install -y python3 python3-pip python3-venv
 sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
-
-# Install python virtual environment
-sudo apt install -y python3-venv
 ```
 
 ### Setup Virtual Environment
@@ -52,3 +49,23 @@ To exit the virtual environment:
 deactivate
 ```
 
+### Check Packages
+
+To check the pip packages installed in the previous step, run this from the repo root:
+
+```bash
+source venv/bin/activate
+python check-packages.py
+```
+
+It should print out something similar to:
+
+```bash
+Python: 3.8.10 (default, Nov 26 2021, 20:14:08)
+[GCC 9.3.0]
+scipy: 1.8.0
+numpy: 1.22.2
+matplotlib: 3.5.1
+pandas: 1.4.1
+sklearn: 1.0.2
+```
