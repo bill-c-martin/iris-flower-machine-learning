@@ -51,7 +51,7 @@ To exit the virtual environment:
 deactivate
 ```
 
-### Check Packages
+### Verify Installed Packages
 
 To check the pip packages installed in the previous step, run this from the repo root:
 
