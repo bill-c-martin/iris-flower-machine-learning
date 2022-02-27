@@ -7,6 +7,10 @@ Statistical classification of [Iris flowers](https://raw.githubusercontent.com/j
 
 ## Results
 
+See later sections on Localhost Setup and Running in VS Code.
+
+After running `index.ipynb` in Jupyter Notebook, the Iris Flowers dataset is analyzed, tested across 6 algorithms, the most accurate model is selected, and then is used to run predictions.
+
 Box and whisker plots for the [Iris flowers dataset](https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv), showing the distribution for each measurement:
 
 ![alt text](output/dataset-distribution.png)
