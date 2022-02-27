@@ -1,11 +1,61 @@
 # iris-flower-machine-learning
 
-Statistical classification of Iris flowers using machine learning with Python and Jupyter Notebook.
-
-> Note: Work in progress.
+Statistical classification of [Iris flowers](https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv) using machine learning with Python and Jupyter Notebook.
 
 - [source](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
 - [potential other source](https://medium.com/gft-engineering/start-to-learn-machine-learning-with-the-iris-flower-classification-challenge-4859a920e5e3)
+
+## Results
+
+Box and whisker plots for the [Iris flowers dataset](https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv), showing the distribution for each measurement:
+
+![alt text](output/dataset-distribution.png)
+
+Histograms of [Iris flowers dataset](https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv), with sepal length and width showing Gaussian distributions:
+
+![alt text](output/dataset-histograms.png)
+
+Scatterplots of the [Iris flowers dataset](https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv) attrbutes, with diagonal groupings indicating high correlations and predictable relationships:
+
+![alt text](output/dataset-attribute-scatterplots.png)
+
+Accuracy comparison across 6 models, based on stratified 10-fold cross validation on the [Iris flowers dataset](https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv):
+
+![alt text](output/algorithm-accuracy-comparison.png)
+
+Winners:
+
+- Linear Discriminant Analysis (LDA)
+- Support Vector Machines (SVM)
+
+At the end of the script, ML predictions are made using SVM.
+
+Accuracy Score:
+
+```bash
+0.9666666666666667
+```
+
+Confusion Matrix, showing indications of any errors made:
+
+```bash
+[[11  0  0]
+ [ 0 12  1]
+ [ 0  0  6]]
+```
+
+Classification Report, showing excellent results for each class:
+```bash
+                 precision    recall  f1-score   support
+
+    Iris-setosa       1.00      1.00      1.00        11
+Iris-versicolor       1.00      0.92      0.96        13
+ Iris-virginica       0.86      1.00      0.92         6
+
+       accuracy                           0.97        30
+      macro avg       0.95      0.97      0.96        30
+   weighted avg       0.97      0.97      0.97        30
+```
 
 ## Localhost Setup
 

@@ -84,6 +84,20 @@ for name, model in models:
 # Compare algorithms on box and whisker plots
 pyplot.boxplot(results, labels=names)
 pyplot.title('Algorithm % Accuracy Comparison')
-print('Linear Discriminant Analysis (LDA) and Support Vector Machines (SVM) achieved 100% accuracy on the Iris Flowers dataset:')
+print('Linear Discriminant Analysis (LDA) and Support Vector Machines (SVM) achieved 100% accuracy on the Iris Flowers dataset. Whereas, Logistic Regression (LR), Decision Tree Classifier(CART), and Gaussian (NB) push down as low as the 80% range:')
 pyplot.show()
-print('Whereas, Logistic Regression (LR), Decision Tree Classifier(CART), and Gaussian (NB) push down as low as the 80% range.')
+
+# Make predictions on validation dataset, using SVM
+model = SVC(gamma='auto')
+model.fit(X_train, Y_train)
+print('Model selected: Support Vector Machines(SVM)')
+predictions = model.predict(X_validation)
+
+print('\nAccuracy Score:', end='\n')
+print(accuracy_score(Y_validation, predictions))
+
+print('\nConfusion Matrix, showing indications of any errors made:', end='\n')
+print(confusion_matrix(Y_validation, predictions))
+
+print('\nClassification Report, showing excellent results for each class:', end='\n')
+print(classification_report(Y_validation, predictions))
